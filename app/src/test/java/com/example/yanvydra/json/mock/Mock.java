@@ -12,6 +12,7 @@ public class Mock {
 
     public static InputStream stream(final String pName) {
         final InputStream resourceAsStream = Mock.class.getClassLoader().getResourceAsStream(pName);
+
         Assert.assertNotNull("resource not found", resourceAsStream);
         return resourceAsStream;
     }

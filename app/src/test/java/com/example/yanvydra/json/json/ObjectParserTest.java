@@ -45,6 +45,7 @@ public class ObjectParserTest {
         final IObject object = objectParserFactory.parserJson(response).parse();
         assertEquals(object.getId(),"0");
         assertEquals(object.getName(),"Whitley Espinoza" );
+        assertEquals(object.getRegistered(),"09 Oct 2017, 10:52:51");
     }
 
     @Test
@@ -56,6 +57,7 @@ public class ObjectParserTest {
         final IObject object = objectParserFactory.parserGson(response).parse();
         assertEquals(object.getId(), "0");
         assertEquals(object.getName(),"Whitley Espinoza" );
+        assertEquals(object.getRegistered(),"09 Oct 2017, 10:52:51");
 
     }
 

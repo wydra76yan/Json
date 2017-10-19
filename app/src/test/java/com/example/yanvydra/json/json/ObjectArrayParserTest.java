@@ -44,8 +44,9 @@ public class ObjectArrayParserTest {
         final ObjectArrayParserFactory objectArrayParserFactory = new ObjectArrayParserFactory();
         final IObjectArray objectArray = objectArrayParserFactory.arrayParserJSON(response).parse();
         final List<IObject> objectList = objectArray.getObjectArray();
-        assertEquals(objectList.get(0).getId(), "0");
+        assertEquals(objectList.get(0).getId(), "2");
         assertEquals(objectList.get(0).getName(), "Orr Fuentes");
+        assertEquals(objectList.get(0).getRegistered(),"10 Oct 2017, 18:57:55");
     }
 
     @Test
@@ -56,8 +57,9 @@ public class ObjectArrayParserTest {
         final ObjectArrayParserFactory objectArrayParserFactory = new ObjectArrayParserFactory();
         final IObjectArray objectArray = objectArrayParserFactory.arrrayParserGSON(response).parse();
         final List<IObject> objectList = objectArray.getObjectArray();
-        assertEquals(objectList.get(0).getId(), "0");
+        assertEquals(objectList.get(0).getId(), "2");
         assertEquals(objectList.get(0).getName(), "Orr Fuentes");
+        assertEquals(objectList.get(0).getRegistered(),"10 Oct 2017, 18:57:55");
     }
 
 }

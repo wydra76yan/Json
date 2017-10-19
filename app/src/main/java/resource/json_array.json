@@ -1,14 +1,17 @@
 [
   {
     "id": 0,
-    "name": "Rita Mayer"
+    "name": "Rita Mayer",
+    "registered": 1507582345121
   },
   {
     "id": 1,
-    "name": "Green Reid"
+    "name": "Green Reid",
+    "registered": 1507582354121
   },
   {
     "id": 2,
-    "name": "Orr Fuentes"
+    "name": "Orr Fuentes",
+    "registered": 1507651075641
   }
 ]
